@@ -1,0 +1,27 @@
+{
+  "name": "moz-netflix",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/css/styles.css -o ./dist/output.css --watch",
+    "build": "npx tailwindcss -i ./src/css/styles.css -o ./dist/output.css --minify",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AllanFilimaoZita/Moz-Netflix.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AllanFilimaoZita/Moz-Netflix/issues"
+  },
+  "homepage": "https://github.com/AllanFilimaoZita/Moz-Netflix#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.14"
+  }
+}
