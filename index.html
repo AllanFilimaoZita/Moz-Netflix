@@ -1,22 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Moz Netflix</title>
+    <title>Moz Netflix - Filmes e Séries Online</title>
     <meta name="description" content="Moz Netflix é o seu portal para filmes e séries online. Assista aos melhores conteúdos com interface moderna e fácil de usar.">
+    <meta name="keywords" content="Netflix, filmes, séries, Moz Netflix, streaming online">
+
+
     <meta property="og:title" content="Moz Netflix - Filmes e Séries Online">
-    <meta property="og:description" content="Assista Filmes e Séries Online com a Moz Netflix">
-    <meta property="og:type" content="Website">
-    <meta property="og:url" content="Ainda não disponivel">
+    <meta property="og:description" content="Assista filmes e séries online com a Moz Netflix">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://seudominio.com">
+    <meta property="og:image" content="assets/img/logo/Netflix_Logo_PMS.png">
 
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/x-icon">
+
+    <!-- Remixicon + Tailwind -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet"/>
-
-
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    
+
+<body class="bg-black text-white h-screen flex flex-col items-center justify-center relative">
+
+    <header class="absolute top-0 left-0 w-full flex justify-between items-center px-4 py-2">
+        <div class="flex items-center">
+            <img src="assets/icons/time.svg" alt="Indicador de Tempo">
+        </div>
+        <div class="flex items-center gap-2">
+            <img src="assets/icons/bar.svg" alt="Indicador de Rede">
+            <img src="assets/icons/Wifi.svg" alt="Indicador de Wi-Fi">
+        </div>
+    </header>
+
+    <main class="flex flex-col items-center justify-center flex-1">
+        <img src="assets/img/logo/Netflix_Logo_PMS.png" alt="Logotipo da Moz Netflix">
+    </main>
+
 </body>
 </html>
