@@ -4,58 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Moz Netflix - Filmes e Séries Online</title>
-    <meta name="description" content="Moz Netflix é o seu portal para filmes e séries online. Assista aos melhores conteúdos com interface moderna e fácil de usar.">
-    <meta name="keywords" content="Netflix, filmes, séries, Moz Netflix, streaming online">
+    <title>Moz Netflix - Seleção de Perfil</title>
+    <meta name="description" content="Selecione seu perfil para continuar na Moz Netflix">
+    <meta name="keywords" content="Netflix, perfil, filmes, séries, Moz Netflix">
 
-
-    <meta property="og:title" content="Moz Netflix - Filmes e Séries Online">
-    <meta property="og:description" content="Assista filmes e séries online com a Moz Netflix">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://seudominio.com">
-    <meta property="og:image" content="assets/img/logo/Netflix_Logo_PMS.png">
-
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/x-icon">
-
-    <!-- Remixicon + Tailwind -->
+    <link rel="shortcut icon" href="../../assets/icons/favicon.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet"/>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
-<body class="bg-black text-white h-screen flex flex-col items-center justify-center relative">
+<body class="bg-black text-white min-h-screen flex flex-col items-center justify-center relative">
 
-    <header class="absolute top-0 left-0 w-full flex justify-between items-center px-4 py-2">
+    <!-- Header fictício -->
+    <header class="absolute top-0 left-0 w-full flex justify-between items-center px-4 py-2 z-10">
         <div class="flex items-center">
-            <img src="../../assets/icons/time.svg" alt="Indicador de Tempo">
+            <img src="../../assets/icons/time.svg" alt="Indicador de Tempo" class="w-5 h-5">
         </div>
         <div class="flex items-center gap-2">
-            <img src="../../assets/icons/bar.svg" alt="Indicador de Rede">
-            <img src="../../assets/icons/Wifi.svg" alt="Indicador de Wi-Fi">
+            <img src="../../assets/icons/bar.svg" alt="Indicador de Rede" class="w-5 h-5">
+            <img src="../../assets/icons/Wifi.svg" alt="Indicador de Wi-Fi" class="w-5 h-5">
         </div>
     </header>
 
-    <section class="flex flex-col items-center justify-center mt-4">
-        <div class="flex items-center">
-            <img src="../../assets/img/logo/Netflix_Logo_PMS.png" alt="Logotipo da Moz Netflix" class="w-48 sm:w-64">
-            <i class="ri-pencil-line" class="text-sm/7"></i>
+    <!-- Logo + Editar Perfis -->
+    <section class="flex flex-col items-center mt-10">
+        <div class="flex items-center gap-2">
+            <img src="../../assets/img/logo/Netflix_Logo_PMS.png" alt="Logotipo Moz Netflix" class="w-48 sm:w-64">
+            <i class="ri-pencil-line text-gray-400 hover:text-white cursor-pointer"></i>
         </div>
+        <p class="text-gray-400 mt-4 text-sm">Quem está assistindo?</p>
     </section>
+
+    <!-- Perfis -->
+    <main class="flex justify-center mt-8 w-full">
+        <section class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
+            <!-- Perfil 1 -->
+            <div class="flex flex-col items-center cursor-pointer group" onclick="goHome()">
+                <img src="../../assets/img/group/Group 66.png" alt="Perfil-1" class="w-24 h-24 sm:w-32 sm:h-32 rounded-md object-cover transform transition-transform duration-300 group-hover:scale-110">
+                <p class="mt-2 text-sm sm:text-base text-gray-200 group-hover:text-white">Allan</p>
+            </div>
     
-    <main class="flex flex-col justify-between gap-10">
-        
-        <section class="grid grid-cols-2 gap-5 w-64 justify-center items-center mb-10">
-            <img src="../../assets/img/group/Group 66.png" alt="Perfil-1">
-            <img src="../../assets/img/group/Group 67.png" alt="Perfil-2">
-            <img src="../../assets/img/group/Group 69.png" alt="Perfil-3">
-            <img src="../../assets/img/group/Group 68.png" alt="Perfil-4">
-            <div class="flex flex-col items-center gap-2">
-                <img src="../../assets/icons/Group 1.svg" alt="Perfil-5">
-                <p class="text-sm">Add Profile</p>
+            <!-- Perfil 2 -->
+            <div class="flex flex-col items-center cursor-pointer group" onclick="goHome()">
+                <img src="../../assets/img/group/Group 67.png" alt="Perfil-2" class="w-24 h-24 sm:w-32 sm:h-32 rounded-md object-cover transform transition-transform duration-300 group-hover:scale-110">
+                <p class="mt-2 text-sm sm:text-base text-gray-200 group-hover:text-white">Maria</p>
+            </div>
+    
+            <!-- Perfil 3 -->
+            <div class="flex flex-col items-center cursor-pointer group" onclick="goHome()">
+                <img src="../../assets/img/group/Group 69.png" alt="Perfil-3" class="w-24 h-24 sm:w-32 sm:h-32 rounded-md object-cover transform transition-transform duration-300 group-hover:scale-110">
+                <p class="mt-2 text-sm sm:text-base text-gray-200 group-hover:text-white">Pedro</p>
+            </div>
+    
+            <!-- Perfil 4 -->
+            <div class="flex flex-col items-center cursor-pointer group" onclick="goHome()">
+                <img src="../../assets/img/group/Group 68.png" alt="Perfil-4" class="w-24 h-24 sm:w-32 sm:h-32 rounded-md object-cover transform transition-transform duration-300 group-hover:scale-110">
+                <p class="mt-2 text-sm sm:text-base text-gray-200 group-hover:text-white">Laura</p>
+            </div>
+    
+            <!-- Add Perfil -->
+            <div class="flex flex-col items-center cursor-pointer group" onclick="alert('Adicionar perfil')">
+                <img src="../../assets/icons/Group 1.svg" alt="Add Perfil" class="w-24 h-24 sm:w-32 sm:h-32 rounded-md border-2 border-gray-500 flex items-center justify-center group-hover:border-white">
+                <p class="mt-2 text-sm sm:text-base text-gray-400 group-hover:text-white">Adicionar</p>
             </div>
         </section>
     </main>
-
-
     
+
+    <script src="../js/profile.js"></script>
 </body>
 </html>
