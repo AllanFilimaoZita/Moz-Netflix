@@ -1,11 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moz Netflix - Tela Principal</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Moz Netflix: Explore filmes e séries online na Tela Principal." />
+    <meta name="keywords" content="Netflix, filmes, séries, streaming" />
+    <meta name="author" content="Allan Zita" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Moz Netflix - Tela Principal" />
+    <meta property="og:description" content="Explore filmes e séries online com Moz Netflix." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/img/logo/Netflix_Logo_PMS.png" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/x-icon" />
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" />
 </head>
-<body>
-    
+
+<body class="bg-black text-white min-h-screen flex flex-col">
+
+    <!-- NAV SEMPRE VISÍVEL -->
+    <header class="fixed top-0 left-0 w-full bg-black/40 backdrop-blur-md z-40 px-4 sm:px-10 py-4 flex items-center justify-between border-b border-white/10">
+        <div class="flex items-center gap-4 w-full">
+            <img src="../../assets/icons/search.svg" alt="">
+            <input type="search" placeholder="Search for a show, movie, genre, etc." class="w-full max-w-md bg-gray-800/60 placeholder-gray-400 text-white rounded-md py-2 px-4 focus:outline-none focus:ring-2 focus:ring-red-600" />
+            <img src="../../assets/icons/mic.svg" alt="">
+        </div>
+    </header>
+
+    <main class="flex flex-col gap-2 w-full h-[75vh] sm:h-[85vh] pt-20 px px-4 sm:px-10">
+        <h2 class="text-lg sm:text-lg font-semibold mb-4">Top Search</h2>
+
+        <div class="w-full flex items-center gap-4 bg-gray-800/60 py-4 w-full">
+            <img src="../../assets/img/background/rectangle13/Rectangle 21.png" alt="">
+            <p>Citation</p>
+            <img src="../../assets/icons/bx_bx-play-circle.svg" alt="">
+        </div>
+
+        <div class="w-full flex items-center gap-4 bg-gray-800/60 py-4 w-full">
+            <img src="../../assets/img/background/rectangle13/Rectangle 22.png" alt="">
+            <p>Oloture</p>
+            <img src="../../assets/icons/bx_bx-play-circle.svg" alt="">
+        </div>
+        
+        <div class="w-full flex items-center gap-4 bg-gray-800/60 py-4 w-full">
+            <img src="../../assets/img/background/rectangle13/Rectangle 23.png" alt="">
+            <p>The Setup</p>
+            <img src="../../assets/icons/bx_bx-play-circle.svg" alt="">
+        </div>
+
+        <div class="w-full flex items-center gap-4 bg-gray-800/60 py-4 w-full">
+            <img src="../../assets/img/background/rectangle13/Rectangle 24.png" alt="">
+            <p>Breaking Bad</p>
+            <img src="../../assets/icons/bx_bx-play-circle.svg" alt="">
+        </div>
+
+        <div class="w-full flex items-center gap-4 bg-gray-800/60 py-4 w-full">
+            <img src="../../assets/img/background/rectangle13/Rectangle 25.png" alt="">
+            <p>Ozark</p>
+            <img src="../../assets/icons/bx_bx-play-circle.svg" alt="">
+        </div>
+
+        <div class="w-full flex items-center gap-4 bg-gray-800/60 py-4 w-full">
+            <img src="../../assets/img/background/rectangle13/Rectangle 26.png" alt="">
+            <p>The Governor</p>
+            <img src="../../assets/icons/bx_bx-play-circle.svg" alt="">
+        </div>
+
+        <div class="w-full flex items-center gap-4 bg-gray-800/60 py-4 w-full">
+            <img src="../../assets/img/background/rectangle13/Rectangle 27.png" alt="">
+            <p>Your Excellency</p>
+            <img src="../../assets/icons/bx_bx-play-circle.svg" alt="">
+        </div>
+        
+    </main>
+
 </body>
+
 </html>
