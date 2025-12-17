@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>More</title>
+    <title>More - Moz Netflix</title>
 
     <!-- SEO -->
     <meta name="description" content="Moz Netflix: Explore filmes e séries online na Tela de Em breve">
-    <meta name="keywords"
-        content="Moz Netflix, filmes online, séries online, Tela de Em breve, assistir filmes, streaming de séries">
+    <meta name="keywords" content="Moz Netflix, filmes online, séries online, streaming">
     <meta name="author" content="Allan Filimão Zita">
 
     <!-- Open Graph -->
@@ -23,110 +22,152 @@
     <link rel="icon" href="../../assets/img/logo/Netflixicon.png">
 
     <!-- Tailwind CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Ícones -->
+    <!-- Remix Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" />
 </head>
 
 <body class="bg-black text-white min-h-screen flex items-center justify-center p-4">
     <div class="max-w-md w-full">
 
-        <div class="flex justify-center gap-3 mb-8">
-            <img src="../../assets/img/group/Group 66.png" alt="">
-            <img src="../../assets/img/group/Group 67.png" alt="">
-            <img src="../../assets/img/group/Group 69.png" alt="">
-            <img src="../../assets/img/group/Group 68.png" alt="">
-            <div class="text-center">
-                <div
-                    class="w-24 h-24 bg-transparent border-2 border-gray-600 rounded-lg flex items-center justify-center mb-2 cursor-pointer hover:border-white transition">
-                    <svg class="w-10 h-10 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
-                    </svg>
-                </div>
+        <!-- Profile Section -->
+        <section class="mb-8" aria-label="Perfis de usuário">
+            <div class="flex justify-center gap-3 mb-6">
+                <!-- Profile Images -->
+                <img src="../../assets/img/group/Group 66.png" alt="Perfil Emenalo" class="w-20 h-20 rounded-lg cursor-pointer hover:ring-2 ring-white transition">
+                <img src="../../assets/img/group/Group 67.png" alt="Perfil Onyeka" class="w-20 h-20 rounded-lg cursor-pointer hover:ring-2 ring-white transition">
+                <img src="../../assets/img/group/Group 69.png" alt="Perfil Thelma" class="w-20 h-20 rounded-lg cursor-pointer hover:ring-2 ring-white transition">
+                <img src="../../assets/img/group/Group 68.png" alt="Perfil Kids" class="w-20 h-20 rounded-lg cursor-pointer hover:ring-2 ring-white transition">
+                
+                <!-- Add Profile Button -->
+                <button class="w-20 h-20 bg-transparent border-2 border-gray-600 rounded-lg flex items-center justify-center cursor-pointer hover:border-white transition" aria-label="Adicionar novo perfil">
+                    <i class="ri-add-line text-4xl text-gray-600"></i>
+                </button>
             </div>
-        </div>
 
-        <div class="text-center mb-12">
-            <button class="text-gray-400 hover:text-white transition flex items-center justify-center gap-2 mx-auto">
-                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                    <path
-                        d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z" />
-                </svg>Manage Profiles
-            </button>
-        </div>
+            <!-- Manage Profiles Button -->
+            <div class="text-center">
+                <button class="text-gray-400 hover:text-white transition-colors flex items-center justify-center gap-2 mx-auto" aria-label="Gerenciar perfis">
+                    <i class="ri-pencil-line text-sm"></i>
+                    <span class="text-sm">Manage Profiles</span>
+                </button>
+            </div>
+        </section>
 
-        <div>
+        <!-- Tell Friends Section -->
+        <section class="bg-zinc-900 rounded-lg p-6 mb-6" aria-label="Compartilhar Netflix">
             <div class="flex items-start gap-3 mb-4">
-
-                <svg class="w-8 h-8 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z" />
-                </svg>
-
-                <div>
+                <i class="ri-chat-3-line text-3xl flex-shrink-0"></i>
+                
+                <div class="flex-1">
                     <h2 class="text-xl font-bold mb-2">Tell friends about Netflix.</h2>
-                    <p class="text-sm text-gray-400 leading-relaxed">
+                    <p class="text-sm text-gray-400 leading-relaxed mb-3">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio aut quae ad architecto magnam
                         qui, quibusdam assumenda libero, excepturi quos, dicta at ut possimus est voluptas quidem vitae
                         cum consequatur?
                     </p>
-
-                    <button>
-                        <p class="text-gray-600 text-xs mt-3 underline text-left hover:text-white duration-300 ease-in">
-                            Terms & Conditions
-                        </p>
-                    </button>
+                    
+                    <a href="#" class="text-xs text-gray-500 hover:text-white underline inline-block transition-colors">
+                        Terms & Conditions
+                    </a>
                 </div>
             </div>
 
-            <div>
-                <input type="text" class="bg-black text-white text-lg px-2 py-1 rounded"">
-                <button class="ml-2 bg-white text-black px-4 py-1 rounded">Copy Link</button>
-            </div>
-
-
-            <div class="flex flex-row justify-between item-center px-3 mt-6">
-                <button>
-                    <img src="../../assets/group/Group 93.svg" alt="" class="w-12 h-12 transition duration-300 transform hover:-translate-y-4">
-                </button>
-                <img src="../../assets/group/Line 4.svg" alt="">
-                <button>
-                    <img src="../../assets/group/Group 92.svg" alt="" class="w-12 h-12 transition duration-300 transform hover:-translate-y-4">
-                </button>
-                <img src="../../assets/group/Line 4.svg" alt="">
-                <button>
-                    <img src="../../assets/group/Group 94.svg" alt="" class="w-12 h-12 object-cover transition duration-300 transform hover:-translate-y-4">
-                </button>
-                <img src="../../assets/group/Line 4.svg" alt="">
-                <button>
-                    <img src="../../assets/group/Group 77.svg" alt="" class="w-12 h-12 transition duration-300 transform hover:-translate-y-5">
+            <!-- Copy Link Section -->
+            <div class="flex gap-2 mb-4">
+                <input 
+                    type="text" 
+                    value="https://netflix.com/refer/12345" 
+                    readonly 
+                    class="flex-1 bg-black text-white text-sm px-3 py-2 rounded border border-gray-700 focus:outline-none focus:border-gray-500"
+                    aria-label="Link de referência"
+                >
+                <button class="bg-white text-black font-semibold px-6 py-2 rounded hover:bg-gray-200 transition-colors">
+                    Copy Link
                 </button>
             </div>
 
-            <div class="mt-8 bg-zinc-900 rounded-lg overflow-hidden">
-                <div class="flex items-center gap-3 p-4 border-b border-gray-700">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
-                    </svg>
-                    <span class="font-lg font-medium">My List</span>
-                </div>
+            <!-- Social Share Buttons -->
+            <div class="flex items-center justify-around gap-2 pt-4 border-t border-gray-800">
+                <!-- WhatsApp -->
+                <button class="group" aria-label="Compartilhar no WhatsApp">
+                    <img 
+                        src="../../assets/group/Group 93.svg" 
+                        alt="WhatsApp" 
+                        class="w-12 h-12 transition-transform duration-300 group-hover:-translate-y-1"
+                    >
+                </button>
 
-                <div class="divide-y divide-gray-800">
-                    <button class="w-full text-left px-6 py-4 hover:bg-gray-800 transition">
-                        <span>App Settings</span>
-                    </button>
-                    <button class="w-full text-left px-6 py-4 hover:bg-gray-800 transition">
-                        <span>Account</span>
-                    </button>
-                    <button class="w-full text-left px-6 py-4 hover:bg-gray-800 transition">
-                        <span>Help</span>
-                    </button>
-                    <button class="w-full text-left px-6 py-4 hover:bg-gray-800 transition">
-                        <span>Sign Out</span>
-                    </button>
-                </div>
+                <div class="w-px h-10 bg-gray-700"></div>
+
+                <!-- Facebook -->
+                <button class="group" aria-label="Compartilhar no Facebook">
+                    <img 
+                        src="../../assets/group/Group 92.svg" 
+                        alt="Facebook" 
+                        class="w-12 h-12 transition-transform duration-300 group-hover:-translate-y-1"
+                    >
+                </button>
+
+                <div class="w-px h-10 bg-gray-700"></div>
+
+                <!-- Gmail -->
+                <button class="group" aria-label="Compartilhar no Gmail">
+                    <img 
+                        src="../../assets/group/Group 94.svg" 
+                        alt="Gmail" 
+                        class="w-12 h-12 object-cover transition-transform duration-300 group-hover:-translate-y-1"
+                    >
+                </button>
+
+                <div class="w-px h-10 bg-gray-700"></div>
+
+                <!-- More Options -->
+                <button class="group flex flex-col items-center" aria-label="Mais opções">
+                    <img 
+                        src="../../assets/group/Group 77.svg" 
+                        alt="More" 
+                        class="w-12 h-12 transition-transform duration-300 group-hover:-translate-y-1"
+                    >
+                </button>
             </div>
-        </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section class="bg-zinc-900 rounded-lg overflow-hidden" aria-label="Menu de configurações">
+            <!-- My List Header -->
+            <div class="flex items-center gap-3 px-6 py-4 border-b border-gray-800">
+                <i class="ri-checkbox-line text-2xl"></i>
+                <h3 class="text-lg font-medium">My List</h3>
+            </div>
+
+            <!-- Menu Items -->
+            <nav>
+                <ul class="divide-y divide-gray-800">
+                    <li>
+                        <button class="w-full text-left px-6 py-4 hover:bg-gray-800 transition-colors" aria-label="Configurações do aplicativo">
+                            <span class="text-base">App Settings</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="w-full text-left px-6 py-4 hover:bg-gray-800 transition-colors" aria-label="Conta do usuário">
+                            <span class="text-base">Account</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="w-full text-left px-6 py-4 hover:bg-gray-800 transition-colors" aria-label="Ajuda">
+                            <span class="text-base">Help</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="w-full text-left px-6 py-4 hover:bg-gray-800 transition-colors" aria-label="Sair da conta">
+                            <span class="text-base">Sign Out</span>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </section>
     </div>
 </body>
 
