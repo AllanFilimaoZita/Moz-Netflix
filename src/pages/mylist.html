@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My List</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" />
+</head>
+
+<body class="bg-black text-white min-h-screen">
+
+    <!-- HEADER FIXO -->
+    <header
+        class="fixed top-0 left-0 w-full bg-black/60 backdrop-blur-md z-40 px-4 py-4 flex items-center gap-4 border-b border-white/10">
+        <a href="home.html">
+            <img src="../../assets/img/logo/Netflixicon.png" class="w-10" alt="Moz Netflix" />
+        </a>
+
+        <!-- Dropdown My List -->
+        <div class="relative">
+            <button id="dropdownBtn" class="flex items-center gap-2 font-semibold">
+                My List <i class="ri-arrow-down-s-line text-xl"></i>
+            </button>
+
+            <ul id="dropdownMenu"
+                class="hidden absolute mt-3 bg-neutral-900 rounded-md shadow-lg overflow-hidden min-w-[180px]">
+                <li class="px-4 py-3 hover:bg-neutral-800 cursor-pointer">Watch Later</li>
+                <li class="px-4 py-3 hover:bg-neutral-800 cursor-pointer">Favorites</li>
+                <li class="px-4 py-3 hover:bg-neutral-800 cursor-pointer">Downloaded</li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- CONTEÚDO -->
+    <main class="pt-24 px-3 sm:px-6 pb-28">
+
+        <!-- GRID DE FILMES -->
+        <section>
+            <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2 sm:gap-3 mb-2">
+
+                <!-- CARD -->
+                <div class="group relative cursor-pointer">
+                    <img src="../../assets/img/background/rectangle2/Rectangle 14.png"
+                        class="rounded-md w-full transition-transform duration-300 group-hover:scale-105" />
+                    <div
+                        class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-end justify-between p-2">
+                        <button><i class="ri-play-fill text-xl"></i></button>
+                        <button><i class="ri-information-line text-xl"></i></button>
+                    </div>
+                </div>
+
+                <div class="group relative cursor-pointer">
+                    <img src="../../assets/img/background/rectangle2/Rectangle 15.png"
+                        class="rounded-md w-full transition-transform duration-300 group-hover:scale-105" />
+                    <div
+                        class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-end justify-between p-2">
+                        <button><i class="ri-play-fill text-xl"></i></button>
+                        <button><i class="ri-information-line text-xl"></i></button>
+                    </div>
+                </div>
+
+                <div class="group relative cursor-pointer">
+                    <img src="../../assets/img/background/rectangle2/Rectangle 16.png"
+                        class="rounded-md w-full transition-transform duration-300 group-hover:scale-105" />
+                    <div
+                        class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-end justify-between p-2">
+                        <button><i class="ri-play-fill text-xl"></i></button>
+                        <button><i class="ri-information-line text-xl"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2 sm:gap-3 mb-2">
+
+                <!-- CARD -->
+                <div class="group relative cursor-pointer">
+                    <img src="../../assets/img/background/rectangle15/Rectangle 14.png"
+                        class="rounded-md w-full transition-transform duration-300 group-hover:scale-105" />
+                    <div
+                        class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-end justify-between p-2">
+                        <button><i class="ri-play-fill text-xl"></i></button>
+                        <button><i class="ri-information-line text-xl"></i></button>
+                    </div>
+                </div>
+
+                <div class="group relative cursor-pointer">
+                    <img src="../../assets/img/background/rectangle15/Rectangle 15.png"
+                        class="rounded-md w-full transition-transform duration-300 group-hover:scale-105" />
+                    <div
+                        class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-end justify-between p-2">
+                        <button><i class="ri-play-fill text-xl"></i></button>
+                        <button><i class="ri-information-line text-xl"></i></button>
+                    </div>
+                </div>
+
+                <div class="group relative cursor-pointer">
+                    <img src="../../assets/img/background/rectangle15/Rectangle 16.png"
+                        class="rounded-md w-full transition-transform duration-300 group-hover:scale-105" />
+                    <div
+                        class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-end justify-between p-2">
+                        <button><i class="ri-play-fill text-xl"></i></button>
+                        <button><i class="ri-information-line text-xl"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2 sm:gap-3 mb-2">
+
+                <!-- CARD -->
+                <div class="group relative cursor-pointer">
+                    <img src="../../assets/img/background/rectangle16/Rectangle 14.png"
+                        class="rounded-md w-full transition-transform duration-300 group-hover:scale-105" />
+                    <div
+                        class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-end justify-between p-2">
+                        <button><i class="ri-play-fill text-xl"></i></button>
+                        <button><i class="ri-information-line text-xl"></i></button>
+                    </div>
+                </div>
+
+                <div class="group relative cursor-pointer">
+                    <img src="../../assets/img/background/rectangle16/Rectangle 15.png"
+                        class="rounded-md w-full transition-transform duration-300 group-hover:scale-105" />
+                    <div
+                        class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-end justify-between p-2">
+                        <button><i class="ri-play-fill text-xl"></i></button>
+                        <button><i class="ri-information-line text-xl"></i></button>
+                    </div>
+                </div>
+
+                <div class="group relative cursor-pointer">
+                    <img src="../../assets/img/background/rectangle16/Rectangle 16.png"
+                        class="rounded-md w-full transition-transform duration-300 group-hover:scale-105" />
+                    <div
+                        class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-end justify-between p-2">
+                        <button><i class="ri-play-fill text-xl"></i></button>
+                        <button><i class="ri-information-line text-xl"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2 sm:gap-3">
+
+                <!-- CARD -->
+                <div class="group relative cursor-pointer">
+                    <img src="../../assets/img/background/rectangle18/Rectangle 14.png"
+                        class="rounded-md w-full transition-transform duration-300 group-hover:scale-105" />
+                    <div
+                        class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-end justify-between p-2">
+                        <button><i class="ri-play-fill text-xl"></i></button>
+                        <button><i class="ri-information-line text-xl"></i></button>
+                    </div>
+                </div>
+
+                <div class="group relative cursor-pointer">
+                    <img src="../../assets/img/background/rectangle18/Rectangle 15.png"
+                        class="rounded-md w-full transition-transform duration-300 group-hover:scale-105" />
+                    <div
+                        class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-end justify-between p-2">
+                        <button><i class="ri-play-fill text-xl"></i></button>
+                        <button><i class="ri-information-line text-xl"></i></button>
+                    </div>
+                </div>
+
+                <div class="group relative cursor-pointer">
+                    <img src="../../assets/img/background/rectangle18/Rectangle 16.png"
+                        class="rounded-md w-full transition-transform duration-300 group-hover:scale-105" />
+                    <div
+                        class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-end justify-between p-2">
+                        <button><i class="ri-play-fill text-xl"></i></button>
+                        <button><i class="ri-information-line text-xl"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2 sm:gap-3 mb-2">
+
+                <!-- CARD -->
+                <div class="group relative cursor-pointer">
+                    <img src="../../assets/img/background/rectangle17/Rectangle 14.png"
+                        class="rounded-md w-full transition-transform duration-300 group-hover:scale-105" />
+                    <div
+                        class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-end justify-between p-2">
+                        <button><i class="ri-play-fill text-xl"></i></button>
+                        <button><i class="ri-information-line text-xl"></i></button>
+                    </div>
+                </div>
+
+                <div class="group relative cursor-pointer">
+                    <img src="../../assets/img/background/rectangle17/Rectangle 15.png"
+                        class="rounded-md w-full transition-transform duration-300 group-hover:scale-105" />
+                    <div
+                        class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-end justify-between p-2">
+                        <button><i class="ri-play-fill text-xl"></i></button>
+                        <button><i class="ri-information-line text-xl"></i></button>
+                    </div>
+                </div>
+
+                <div class="group relative cursor-pointer">
+                    <img src="../../assets/img/background/rectangle17/Rectangle 16.png"
+                        class="rounded-md w-full transition-transform duration-300 group-hover:scale-105" />
+                    <div
+                        class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-end justify-between p-2">
+                        <button><i class="ri-play-fill text-xl"></i></button>
+                        <button><i class="ri-information-line text-xl"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER FIXO (MOBILE) -->
+    <footer class="fixed bottom-0 left-0 w-full bg-black/90 backdrop-blur-md border-t border-white/10 z-40">
+        <nav class="flex items-center justify-around py-3">
+            <a href="home.html" class="flex flex-col items-center text-white/60 hover:text-white">
+                <i class="ri-home-4-line text-2xl"></i>
+                <span class="text-xs">Home</span>
+            </a>
+            <a href="search.html" class="flex flex-col items-center text-white/60 hover:text-white">
+                <i class="ri-search-line text-2xl"></i>
+                <span class="text-xs">Search</span>
+            </a>
+            <a href="mylist.html" class="flex flex-col items-center text-white">
+                <i class="ri-bookmark-fill text-2xl"></i>
+                <span class="text-xs">My List</span>
+            </a>
+            <a href="download.html" class="flex flex-col items-center text-white/60 hover:text-white">
+                <i class="ri-download-line text-2xl"></i>
+                <span class="text-xs">Downloads</span>
+            </a>
+            <a href="more.html" class="flex flex-col items-center text-white/60 hover:text-white">
+                <i class="ri-menu-line text-2xl"></i>
+                <span class="text-xs">More</span>
+            </a>
+        </nav>
+    </footer>
+
+    <!-- JS DROPDOWN -->
+    <script>
+        const btn = document.getElementById('dropdownBtn');
+        const menu = document.getElementById('dropdownMenu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+
+</html>
